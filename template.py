@@ -6,6 +6,7 @@ TASK: test
 
 fin = open('test.in', 'r')
 fout = open('test.out', 'w')
+data = fin.read().splitlines()
 # your awesome code here
 
 output = ''
@@ -16,3 +17,4 @@ else:
 
 fout.write(output + '\n')
 fout.close()
+print(output)
