@@ -27,7 +27,7 @@ for _ in range(np):
 		continue
 	moneyGiving = giving // numPeople
 	moneyKeeping = giving % numPeople
-	people[name] += moneyKeeping
+	people[name] += moneyKeeping - giving
 	for i in range(numPeople):
 		people[data[line + 2 + i]] += moneyGiving
 	line += numPeople + 2
