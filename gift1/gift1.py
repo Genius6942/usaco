@@ -6,7 +6,7 @@ TASK: gift1
 
 fin = open('gift1.in', 'r')
 fout = open('gift1.out', 'w')
-data = fin.read().splitlines()
+data = fin.read().replace('_' , ' ').splitlines()
 
 np = int(data[0]) # number of people
 
