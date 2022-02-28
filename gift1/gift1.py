@@ -23,7 +23,7 @@ for _ in range(np):
 	giving = int(moneyData[0])
 	numPeople = int(moneyData[1])
 	if numPeople <= 0:
-		people[name] += giving
+		line += 2
 		continue
 	moneyGiving = giving // numPeople
 	moneyKeeping = giving % numPeople
@@ -39,4 +39,3 @@ output = '\n'.join(output)
 
 fout.write(output + '\n')
 fout.close()
-print(output)
