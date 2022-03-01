@@ -19,7 +19,22 @@ start = 1900
 months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 for year in range(start, start + years):
-	print(year)
+	for month in range(len(months)):
+		days = 0
+		if month == 1: # febuary leap year yay
+			if year % 100 == 0:
+				if year % 400 == 0:
+					days = 29
+				else:
+						days = 28
+			elif year % 4 == 0:
+				days = 29
+			else:
+				days = 28
+		else:
+			days = months[month]
+		
+						
 
 output = ''
 
