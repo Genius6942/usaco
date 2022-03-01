@@ -8,12 +8,18 @@ import os
 __location__ = os.path.realpath(
     os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
-problemName = "test"
+problemName = "friday"
 
 fin = open(os.path.join(__location__, problemName + '.in'), 'r')
 fout = open(os.path.join(__location__, problemName + '.out'), 'w')
-data = fin.read().splitlines()
-# your awesome code here
+
+years = int(fin.read())
+
+start = 1900
+months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+for year in range(start, start + years):
+	print(year)
 
 output = ''
 
